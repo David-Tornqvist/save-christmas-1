@@ -37,3 +37,8 @@ console.log(includes(items, 'Lego')) // Should be true
 console.log(includes(items, 'Teddybear')) // Should be true
 console.log(includes(items, 'Laser sword')) // Should be false
 console.log(includes(items, 'Playstation')) // Should be false
+
+
+//En algoritm är en steg för steg beskrivning hur man utför något tillexempel söker en databas hittar snabbaste vägen eller sorterar filmer efter betyg.
+//En algoritm består av komandon villkor och loopar
+//pseudokod är något som liknar kod men egentligen inte är det. Det kan vara lättare att skriva pseudokod först eller om någon som inte är programmera vill beställa en algoritm.
