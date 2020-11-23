@@ -1,6 +1,15 @@
 
 function indexOf(arr, item) {
-    
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] === item){
+            return i;
+        }
+    }
+    return -1
+}
+
+function includes(arr, item) {
+    return indexOf(arr,item) != -1;
 }
 
 const items = [
@@ -23,3 +32,8 @@ console.log(items.indexOf('Lego'))         // Should be 1
 console.log(items.indexOf('Teddybear'))    // Should be 3
 console.log(items.indexOf('Laser sword'))  // Should be -1
 console.log(items.indexOf('Playstation'))  // Should be -1
+
+console.log(includes(items, 'Lego')) // Should be true
+console.log(includes(items, 'Teddybear')) // Should be true
+console.log(includes(items, 'Laser sword')) // Should be false
+console.log(includes(items, 'Playstation')) // Should be false
