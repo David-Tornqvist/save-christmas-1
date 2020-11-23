@@ -1,7 +1,13 @@
 
 function map(arr, func) {
     // skapa en ny tom array av samma längd som arr
+    let newArray = []
 
+    for (let i = 0; i < arr.length; i++) {
+        newArray[i] = func(arr[i])   
+    }
+
+    return newArray;
     // för varje element i arr
     //      newArray[j] = func(arr[j])
 
@@ -24,3 +30,21 @@ console.log(stringArray)    // ['boll', 'häst', 'flygplan']
 
 // Test 3 - GÖR ETT EGET TEST HÄR
 console.log('\nTEST 3')
+const testRound = [[1,2,3],[1,2,3],[1,2,3]];
+
+console.log(roundabout(testRound))
+
+
+function roundabout(arr){
+    return map(arr,fliplist)
+}
+
+function fliplist(arr){
+    return map(arr,flipper)
+}
+
+function flipper(x){
+    if(x === 3){return 1};
+    if(x === 2){return 2};
+    if(x === 1){return 3};
+}

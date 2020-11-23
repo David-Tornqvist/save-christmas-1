@@ -28,10 +28,6 @@ console.log(indexOf(items, 'Playstation'))  // Should be -1
 
 // ------------------
 
-console.log(items.indexOf('Lego'))         // Should be 1
-console.log(items.indexOf('Teddybear'))    // Should be 3
-console.log(items.indexOf('Laser sword'))  // Should be -1
-console.log(items.indexOf('Playstation'))  // Should be -1
 
 console.log(includes(items, 'Lego')) // Should be true
 console.log(includes(items, 'Teddybear')) // Should be true
